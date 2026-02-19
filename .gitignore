@@ -1,0 +1,45 @@
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Logs
+*.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Optional caches
+.npm
+.eslintcache
+
+# Production artifacts
+build
+dist
+public/build
+release-builds
+
+# Optional aot caches
+.next
+out
+.vercel # Vercel folder
+.netlify # Netlify folder
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE configuration files
+.idea/ # JetBrains IDEs
+.vscode/
+*.swp
+.DS_Store # Mac files
+
+# Tailwind CSS specific
+# If you are outputting your compiled CSS to a specific file that should not be tracked, add it here.
+# Example: src/styles/tailwind.output.css
+/src/styles/tailwind.output.css
