@@ -106,7 +106,7 @@ const Pageone = () => {
       </svg>
             <div className=''>
               <div className='container mx-auto px-[24px] sm:px-0'>
-                <div className='bacxkgaAS mx-auto pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[80px] pb-[36px] sm:pb-[40px] md:pb-[48px] lg:pb-[64px] xl:pb-[96px] 2xl:pb-[120px] relative sm:gap-0 gap-12'>
+                <div className='bacxkgaAS mx-auto pt-[36px] sm:pt-[40px] md:pt-[48px] lg:pt-[64px] xl:pt-[96px] 2xl:pt-[120px] pb-[36px] sm:pb-[40px] md:pb-[48px] lg:pb-[64px] xl:pb-[96px] 2xl:pb-[120px] relative sm:gap-0 gap-12'>
                   <div ref={textRef} className='flex md:flex-row flex-col items-center justify-between'>
                   <div className="flex items-start justify-start flex-col">
                     <button  className=" transingpore relative overflow-hidden px-[12px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px]
@@ -132,7 +132,7 @@ const Pageone = () => {
                      <span>Everything you need to trade </span><br className='sm:block hidden'/><span>with discipline.</span>  
                     </h2>
                   </div>
-                    <p className='bitstartp text-[11px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px] text-start! '>Built for traders who want clarity, structure, and<br className='md:block hidden'/> real performance tracking not messy notes and <br className='md:block hidden'/>random screenshots.</p>
+                    <p className='bitstartp text-[11px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px] !text-start'>Built for traders who want clarity, structure, and<br className='md:block hidden'/> real performance tracking not messy notes and <br className='md:block hidden'/>random screenshots.</p>
                   </div>
                   
 
@@ -144,7 +144,7 @@ const Pageone = () => {
                   <div className='bordingrtexara h-fit relative pt-[8px] md:pt-[9px] lg:pt-[10px] 2xl:pt-[12px] pb-[14px] sm:pb-[15px] md:pb-[16px] lg:pb-[20px] xl:pb-[24px] 2xl:pb-[32px]  px-[8px] md:px-[9px] lg:px-[10px] 2xl:px-[12px] overflow-hidden'>
                     <img className='w-full pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px]' src={imageone} alt='Loading...'/>
                     <h2 className='repetinmaksa text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] px-[12px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px]'>Trade Logging</h2>
-                    <p className='throeconsper text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] mt-[6px] xl:mt-[7px] 2xl:mt-[8px] px-[12px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px]'>Capture entries, exits, position size, screenshots, and <br className='md:block hidden'/>notes in a clean structured format.</p> 
+                    <p className='throeconsper !text-[!908EAE] text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] mt-[6px] xl:mt-[7px] 2xl:mt-[8px] px-[12px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px]'>Capture entries, exits, position size, screenshots, and <br className='md:block hidden'/>notes in a clean structured format.</p> 
                   </div>
                   {/* section 2 */}
                   <div className='bordingrtexara h-fit  pt-[8px] md:pt-[9px] lg:pt-[10px] 2xl:pt-[12px] pb-[14px] sm:pb-[15px] md:pb-[16px] lg:pb-[20px] xl:pb-[24px] 2xl:pb-[32px] px-[8px] md:px-[9px] lg:px-[10px] 2xl:px-[12px] overflow-hidden'>

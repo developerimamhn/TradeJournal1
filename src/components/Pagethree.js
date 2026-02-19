@@ -116,7 +116,7 @@ const cardsRef = useRef([]);
 
     return (
         <div id='Strategies' className='relative '>
-          <svg className='w-1/2 absolute top-1/2 -translate-y-1/2 z-0' viewBox="0 0 1350 2548" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='w-1/2 absolute top-1/2 -translate-y-1/2 z-10 select-none' viewBox="0 0 1350 2548" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_f_953_3233)">
           <path d="M-329.938 1512.32L-250.847 1337.57L-496 1498.08L-58.2592 1000L349.175 1310.22L308 1336.06L256.866 1399.73C207.193 1423.11 112.363 1476.38 130.419 1502.4C148.474 1528.42 45.8572 1543.15 -7.70816 1547.26L-98.0714 1460.28L-329.938 1512.32Z" fill="#5570D3"/>
           </g>
@@ -128,9 +128,21 @@ const cardsRef = useRef([]);
           </filter>
           </defs>
           </svg>
+          <svg className='w-1/2 absolute top-[-60%] right-0 z-10 select-none' viewBox="0 0 1679 2548" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_f_945_12042)">
+          <path d="M1166.06 1512.32L1245.15 1337.57L1000 1498.08L1437.74 1000L1845.18 1310.22L1804 1336.06L1752.87 1399.73C1703.19 1423.11 1608.36 1476.38 1626.42 1502.4C1644.47 1528.42 1541.86 1543.15 1488.29 1547.26L1397.93 1460.28L1166.06 1512.32Z" fill="#5570D3"/>
+          </g>
+          <defs>
+          <filter id="filter0_f_945_12042" x="0" y="0" width="2845.18" height="2547.25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+          <feGaussianBlur stdDeviation="500" result="effect1_foregroundBlur_945_12042"/>
+          </filter>
+          </defs>
+          </svg>
 
-          <img className='w-full absolute top-1/2 -translate-y-1/2 -z-11 object-cover object-center ' src={linerone} alt='lineroneLoading...'/>
-            <div ref={wrapperRef} className='relative z-20 container mx-auto py-[70px] sm:py-[80px] md:py-[90px] lg:py-[100px] xl:py-[110px] 2xl:py-[120px] px-[24px] md:px-[100px] lg:px-[120px] xl:px-[150px] 2xl:px-[232px]'>
+          <img className='w-full absolute top-1/2 -translate-y-1/2 -z-11 object-cover object-center select-none' src={linerone} alt='lineroneLoading...'/>
+            <div ref={wrapperRef} className='relative z-20 container overflow-hidden mx-auto py-[70px] sm:py-[80px] md:py-[90px] lg:py-[100px] xl:py-[110px] 2xl:py-[120px] px-[24px] md:px-[100px] lg:px-[120px] xl:px-[150px] 2xl:px-[232px]'>
                 <div className="">
                   <div ref={headerRef} className='flex flex-col items-start justify-start'>
                     <div className="flex items-start justify-start">

@@ -176,18 +176,7 @@ const Pagetwo = () => {
     
     return (
         <div id='Analytics' ref={wrapperRef} className='pt-[36px] sm:pt-[40px] md:pt-[48px] lg:pt-[64px] xl:pt-[96px] 2xl:pt-[120px] px-6 sm:px-0 relative'>
-          <svg className='w-1/2 absolute bottom-[-40%] right-0 z-2' viewBox="0 0 1679 2548" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_f_945_12042)">
-          <path d="M1166.06 1512.32L1245.15 1337.57L1000 1498.08L1437.74 1000L1845.18 1310.22L1804 1336.06L1752.87 1399.73C1703.19 1423.11 1608.36 1476.38 1626.42 1502.4C1644.47 1528.42 1541.86 1543.15 1488.29 1547.26L1397.93 1460.28L1166.06 1512.32Z" fill="#5570D3"/>
-          </g>
-          <defs>
-          <filter id="filter0_f_945_12042" x="0" y="0" width="2845.18" height="2547.25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-          <feGaussianBlur stdDeviation="500" result="effect1_foregroundBlur_945_12042"/>
-          </filter>
-          </defs>
-          </svg>
+          
 
            <img className='w-full absolute top-0 -z-10' src={backgroudimage} alt='Loading...'/>
            <div className='container mx-auto relative z-10'>

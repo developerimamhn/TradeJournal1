@@ -196,7 +196,7 @@ useEffect(() => {
                         "/>
                 <div className='pl-[24px] sm:pl-[32px] md:pl-[36px] lg:pl-[40px] xl:pl-[48px] 2xl:pl-[64px] pt-[24px] sm:pt-[32px] md:pt-[36px] lg:pt-[40px] xl:pt-[48px] 2xl:pt-[55px]  pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[54px]'>
                   <h2 className='tradines text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[62px] text-start! pt-[8px] sm:pt-[9px] md:pt-[10px] lg:pt-[11px] xl:pt-[12px] 2xl:pt-[12px]'>
-                  Designed for every step <br className='sm:block hidden'/> of your journey 
+                 Ready to trade with <br className='sm:block hidden'/> discipline and clarity? 
                   </h2>
                   <p className='starttreadjorya text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px]'>Start using TradeJournal today and turn every trade into <br className='sm:block hidden'/> measurable improvement.</p>
                   <div className='pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px] flex items-center gap-[11px] sm:gap-[12px] md:gap-[13px] lg:gap-[14px] xl:gap-[15px] 2xl:gap-[16px]'>

@@ -91,7 +91,7 @@ const textRef = useRef(null);
 
     return (
         <div id='Pricing' ref={wrapperRef} className='py-[45px] sm:py-[55px] md:py-[75px] lg:py-[105px] xl:py-[124px] 2xl:py-[148px] px-6 sm:px-0 relative'>
-          <svg className='w-1/2 absolute bottom-[-60%] right-0' viewBox="0 0 1679 2548" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='w-1/2 absolute bottom-[-60%] right-0 select-none' viewBox="0 0 1679 2548" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_f_1874_1799)">
             <path d="M1166.06 1512.32L1245.15 1337.57L1000 1498.08L1437.74 1000L1845.18 1310.22L1804 1336.06L1752.87 1399.73C1703.19 1423.11 1608.36 1476.38 1626.42 1502.4C1644.47 1528.42 1541.86 1543.15 1488.29 1547.26L1397.93 1460.28L1166.06 1512.32Z" fill="#5570D3"/>
             </g>  
@@ -104,7 +104,7 @@ const textRef = useRef(null);
             </defs>
             </svg> 
 
-        <div className='container mx-auto'>
+        <div className='container mx-auto relative z-20'>
             <div ref={textRef} className='grid grid-cols-1 justify-center items-center gap-[32px] sm:gap-[36px] md:gap-[40px] lg:gap-[48px] xl:gap-[64px] 2xl:gap-[78px]'>
             <div>
                 
@@ -128,7 +128,7 @@ const textRef = useRef(null);
                       />
                     </button>
                   </div>
-                  <h2 className='tradines text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[62px] text-center! pt-[8px] sm:pt-[9px] md:pt-[10px] lg:pt-[11px] xl:pt-[12px] 2xl:pt-[12px]'>
+                  <h2 className='tradines text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[62px] text-center pt-[8px] sm:pt-[9px] md:pt-[10px] lg:pt-[11px] xl:pt-[12px] 2xl:pt-[12px]'>
                  Start tracking in minutes. <br className='sm:block hidden'/> Improve for life. 
                   </h2>
 

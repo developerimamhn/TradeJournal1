@@ -134,7 +134,7 @@ const NavBar = () => {
             <div className='sm:px-[36px] md:px-[40px] lg:px-[48px] xl:px-[64px] 2xl:px-[100px]  flex justify-between items-center relative  sm:overflow-hidden '>
             {/* <dev className='linersext absolute bottom-0 left-0 w-full h-[2px] z-10'></dev> */}
             <button onClick={(e) => handleScrollToTop(e, "")} className='cursor-pointer flex items-center justify-start Froggo-Logo sm:py-0 py-2'>
-                <img className='w-full h-[21px] sm:h-[16px] md:h-[24px]  2xl:h-[28px]' src={logo} alt=''/></button>
+                <img className='w-full h-[14px] sm:h-[15px] md:h-[16px]  2xl:h-[17px]' src={logo} alt=''/></button>
                 <div className='sm:hidden relative top-[-11px] -left-6'>   
                     <div 
                         className={`transition-transform duration-300 ease-in-out ${toggle ? 'opacity-100' : 'opacity-0 -translate-x-2'}`}
