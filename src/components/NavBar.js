@@ -131,7 +131,7 @@ const NavBar = () => {
         }`}>
             
         <header className='border-b-[#1F1D35] border-b-[1px] py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] px-4 sm:px-0'>  
-            <div className='container mx-auto  flex justify-between items-center relative  sm:overflow-hidden '>
+            <div className='sm:px-[36px] md:px-[40px] lg:px-[48px] xl:px-[64px] 2xl:px-[100px]  flex justify-between items-center relative  sm:overflow-hidden '>
             {/* <dev className='linersext absolute bottom-0 left-0 w-full h-[2px] z-10'></dev> */}
             <button onClick={(e) => handleScrollToTop(e, "")} className='cursor-pointer flex items-center justify-start Froggo-Logo sm:py-0 py-2'>
                 <img className='w-full h-[21px] sm:h-[16px] md:h-[24px]  2xl:h-[28px]' src={logo} alt=''/></button>
