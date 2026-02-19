@@ -65,9 +65,9 @@ const HeroPage = () => {
                   </div>
                 </div>
             </div>
-           
-            <img  className='w-full sm:px-0 px-6 pt-[40px] sm:pt-[48px] md:pt-[58px] lg:pt-[74px] xl:pt-[110px] 2xl:pt-[132px] hero-anim delay-5' src={righticon} alt='loading..'/>
-             
+           <div className="rounded-[60px] shadow-[0px_22px_48px_#608BFE]">
+            <img  className='w-full sm:px-0 px-6 mt-[40px] sm:mt-[48px] md:mt-[58px] lg:mt-[74px] xl:mt-[110px] 2xl:mt-[132px] hero-anim delay-5 ' src={righticon} alt='loading..'/>
+             </div>
           </div>
           <img className='w-full arrorbg absolute bottom-0 -z-10 hero-anims delay-6 animate-pulse' src={righticona} alt='loading..'/>
         </div>
