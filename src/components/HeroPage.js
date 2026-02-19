@@ -1,5 +1,5 @@
 // import { gsap } from "gsap";
-import { useEffect, useRef } from 'react';
+// import { useEffect, useRef } from 'react';
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import righticon from '../assets/Frame 1984078515.png';

@@ -9,15 +9,13 @@ const NavBar = () => {
     const [toggle, setToggle] = useState(false);
     const menuRef = useRef(null);
     const menuButtonRef = useRef(null);
-    const [scrolled, setScrolled] = useState(false); // For background styling
-    const [isVisible, setIsVisible] = useState(true); // For show/hide
-    const [prevScrollPos, setPrevScrollPos] = useState(0); // Tracks scroll direction
-    const [activeSection, setActiveSection] = useState("");
-    const [isScrolling, setIsScrolling] = useState(false);
+    const [scrolled, setScrolled] = useState(false); 
+    const [isVisible, setIsVisible] = useState(true); 
+    const [prevScrollPos, setPrevScrollPos] = useState(0); 
+    const [, setActiveSection] = useState("");
+    const [, setIsScrolling] = useState(false);
 
 
-
-    // Handle clicks outside to close the menu
     const handleClickOutside = (event) => {
         if (
             menuRef.current &&
@@ -35,44 +33,37 @@ const NavBar = () => {
         };
     }, []);
 
-    // Smooth scroll to section
-const handleScroll = (e, sectionId) => {
-  e.preventDefault();
 
-  const section = document.getElementById(sectionId);
-  if (!section) return;
-   setIsScrolling(true);  
+            const handleScroll = (e, sectionId) => {
+            e.preventDefault();
 
-  const headerOffset = 80; // navbar height (adjust if needed)
-  const elementPosition = section.getBoundingClientRect().top;
-  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            const section = document.getElementById(sectionId);
+            if (!section) return;
+            setIsScrolling(true);  
 
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth",
-  });
+            const headerOffset = 80; // navbar height (adjust if needed)
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-  setToggle(false);
-  setActiveSection(sectionId);
-};
- 
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth",
+            });
 
-    // Scroll logic for show/hide and background change
+            setToggle(false);
+            setActiveSection(sectionId);
+            };
+
     useEffect(() => {
         const handleScroll = () => {
-            // if (isScrolling) return;
             const currentScrollPos = window.scrollY;
-
-            // Update scrolled state for background styling
             if (currentScrollPos > 50) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
             }
-
-            // Show/hide navbar based on scroll direction
             if (currentScrollPos < 50) {
-                setIsVisible(true); // Show near the top
+                setIsVisible(true);
             } else if (currentScrollPos > prevScrollPos) {
                 setIsVisible(false); // Hide when scrolling down
             } else {
@@ -142,8 +133,8 @@ const handleScroll = (e, sectionId) => {
         <header className='border-b-[#1F1D35] border-b-[1px] py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] px-4 sm:px-0'>  
             <div className='container mx-auto  flex justify-between items-center relative  sm:overflow-hidden '>
             {/* <dev className='linersext absolute bottom-0 left-0 w-full h-[2px] z-10'></dev> */}
-            <a onClick={(e) => handleScrollToTop(e, "")} href='' className='cursor-pointer flex items-center justify-start Froggo-Logo sm:py-0 py-2'>
-                <img className='w-full h-[21px] sm:h-[16px] md:h-[24px]  2xl:h-[28px]' src={logo} alt=''/></a>
+            <button onClick={(e) => handleScrollToTop(e, "")} className='cursor-pointer flex items-center justify-start Froggo-Logo sm:py-0 py-2'>
+                <img className='w-full h-[21px] sm:h-[16px] md:h-[24px]  2xl:h-[28px]' src={logo} alt=''/></button>
                 <div className='sm:hidden relative top-[-11px] -left-6'>   
                     <div 
                         className={`transition-transform duration-300 ease-in-out ${toggle ? 'opacity-100' : 'opacity-0 -translate-x-2'}`}

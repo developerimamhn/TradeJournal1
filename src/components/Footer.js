@@ -4,7 +4,7 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef,  } from 'react';
 import backgroundimageawsta from "../assets/Frame 1321319039.png";
 import logo from "../assets/TradeJournal.png";
 
@@ -12,56 +12,8 @@ import logo from "../assets/TradeJournal.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
-    const [toggle, setToggle] = useState(false);
-    const menuRef = useRef(null); 
-    const menuButtonRef = useRef(null);
-    const [scrolled, setScrolled] = useState(false);
-  
-    const handleClickOutside = (event) => {
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(event.target) &&
-        (!menuButtonRef.current || !menuButtonRef.current.contains(event.target))
-      ) {
-        setToggle(false);
-      }
-    };
-  
+    
     useEffect(() => {
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }, []);
-  
-    const handleScroll = (e, sectionId) => {
-      e.preventDefault();
-      const section = document.getElementById(sectionId);
-      if (section) {
-        window.scrollTo({
-          top: section.offsetTop - 50,
-          behavior: "smooth",
-        });
-        setToggle(false);
-      }
-    };
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY > 50) {
-          setScrolled(true);
-        } else {
-          setScrolled(false);
-        }
-      };
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-  
-    useEffect(() => {
-      // Example of animating elements when they come into view
       gsap.fromTo('.feature', 
         { opacity: 0, y: 50 }, 
         {
@@ -76,8 +28,6 @@ const Footer = () => {
           }
         }
       );
-  
-      // Example of animating the button with scale and opacity
       gsap.fromTo('.buttonaudit-3', 
         { opacity: 0, scale: 0.8 }, 
         {
@@ -94,21 +44,9 @@ const Footer = () => {
         }
       );
     }, []);
-  
-    const [isTranslated, setIsTranslated] = useState(false);
-  
-    const handleClick = () => {
-      setIsTranslated(true);
-      setTimeout(() => {
-        setIsTranslated(false);
-      }, 200);
-    };
-
-
     const iconRefs = useRef([]);
 
   useEffect(() => {
-    // GSAP entrance animation for icons
     gsap.fromTo(
       iconRefs.current,
       { opacity: 0, y: 20 },
@@ -121,27 +59,6 @@ const Footer = () => {
       }
     );
   }, []);
-
-  // Handle hover animation with GSAP
-  const handleMouseEnter = (index) => {
-    gsap.to(iconRefs.current[index], {
-      scale: 1.2,
-      rotate: 10,
-      duration: 0.3,
-      ease: 'power2.out',
-    });
-  };
-
-  const handleMouseLeave = (index) => {
-    gsap.to(iconRefs.current[index], {
-      scale: 1,
-      rotate: 0,
-      duration: 0.3,
-      ease: 'power2.out',
-    });
-  };
-
-
     return (
         <div id='Support' className='footersvg relative pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[84px] '>
           <img className='h-fit absolute bottom-0 left-0 animate-pulse -z-10' src={backgroundimageawsta} alt='backgroundLoading...'/>
