@@ -46,7 +46,7 @@ const HeroPage = () => {
                   <div className='flex items-start flex-col justify-center'>
                     
                     <p className='bitstartp hero-anim delay-3 text-[11px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px] !text-start md:pt-0 pt-2'>A powerful trading journal and analytics platform built <br className='md:block hidden'/>to help traders identify patterns, reduce mistakes, and <br className='md:block hidden'/> improve consistency.</p>
-                    <button className='buttonauditelt hero-anim delay-4 bg-[#608BFE] hover:bg-transparent! group relative  cursor-pointer px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[32px]
+                    <button className='buttonauditelt hero-anim delay-4 bg-[#608BFE] hover:bg-transparent group relative  cursor-pointer px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[32px]
                         py-[11px] sm:py-[12px] md:py-[13px] lg:py-[14px] xl:py-[15px] 2xl:py-[16px]
                         text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] group gap-[7.50px]'>
                             Get Started Free

@@ -222,7 +222,7 @@ const cardsRef = useRef([]);
                           pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[16px] 2xl:pb-[16px]
                           px-[20px] sm:px-[24px] md:px-[28px] lg:px-[32px] xl:px-[32px] 2xl:px-[32px]
                           my-[20px] sm:my-[24px] md:my-[28px] lg:my-[32px] xl:my-[32px] 2xl:my-[32px]
-                          transition-all duration-200 group-hover:scale-[1.02] group-active:scale-[0.98] group-hover:bg-[#5570D3] group-active:bg-[#5570D3]'>
+                          transition-all duration-300 group-hover:opacity-80 group-active:scale-[0.98] group-hover:bg-[#5570D3] group-hover:!border-white/0 group-active:bg-[#5570D3]'>
                           <span className='ctabuttontext text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
                             Start with Starter
                           </span>
@@ -259,27 +259,28 @@ const cardsRef = useRef([]);
                           <circle cx="59" cy="59" r="59" fill="#608BFE"/>
                         </svg>
                         <svg className='w-[24px] sm:w-[32px] md:w-[36px] lg:w-[40px] xl:w-[48px] 2xl:w-[56px]' viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g filter="url(#filter0_ii_1874_1607)">
-                          <rect width="56" height="56" rx="28" fill="white" fill-opacity="0.04"/>
-                          <path d="M31 39.9996C31 40.2648 30.8946 40.5192 30.7071 40.7067C30.5196 40.8943 30.2652 40.9996 30 40.9996H26C25.7348 40.9996 25.4804 40.8943 25.2929 40.7067C25.1053 40.5192 25 40.2648 25 39.9996C25 39.7344 25.1053 39.48 25.2929 39.2925C25.4804 39.105 25.7348 38.9996 26 38.9996H30C30.2652 38.9996 30.5196 39.105 30.7071 39.2925C30.8946 39.48 31 39.7344 31 39.9996ZM39.9525 31.4784L38.4075 38.4321C38.3342 38.7623 38.1783 39.0686 37.9545 39.3222C37.7307 39.5758 37.4462 39.7685 37.1276 39.8822C36.8091 39.996 36.4669 40.0271 36.133 39.9726C35.7992 39.9182 35.4846 39.7799 35.2187 39.5709L31.8137 36.9996H24.1887L20.7812 39.5709C20.5153 39.7799 20.2008 39.9182 19.8669 39.9726C19.5331 40.0271 19.1909 39.996 18.8723 39.8822C18.5538 39.7685 18.2693 39.5758 18.0455 39.3222C17.8216 39.0686 17.6658 38.7623 17.5925 38.4321L16.0475 31.4784C15.982 31.1799 15.9853 30.8705 16.0572 30.5736C16.1291 30.2766 16.2677 30 16.4625 29.7646L20.0325 25.4821C20.1523 23.9083 20.5136 22.3623 21.1037 20.8984C22.7162 16.8559 25.6037 14.3196 26.775 13.4171C27.1256 13.1455 27.5565 12.998 28 12.998C28.4435 12.998 28.8744 13.1455 29.225 13.4171C30.3925 14.3196 33.2837 16.8559 34.8962 20.8984C35.4864 22.3623 35.8477 23.9083 35.9675 25.4821L39.5375 29.7646C39.7323 30 39.8709 30.2766 39.9428 30.5736C40.0147 30.8705 40.018 31.1799 39.9525 31.4784ZM22.5487 35.7284C21.2062 33.2842 20.3912 30.8813 20.1037 28.5196L18 31.0446L19.545 37.9996L19.5675 37.9834L22.5487 35.7284ZM29.5 24.4996C29.5 24.2029 29.412 23.9129 29.2472 23.6663C29.0824 23.4196 28.8481 23.2273 28.574 23.1138C28.2999 23.0003 27.9983 22.9706 27.7074 23.0284C27.4164 23.0863 27.1491 23.2292 26.9393 23.4389C26.7295 23.6487 26.5867 23.916 26.5288 24.207C26.4709 24.4979 26.5006 24.7995 26.6142 25.0736C26.7277 25.3477 26.92 25.582 27.1666 25.7468C27.4133 25.9116 27.7033 25.9996 28 25.9996C28.3978 25.9996 28.7793 25.8416 29.0606 25.5603C29.342 25.279 29.5 24.8974 29.5 24.4996ZM38 31.0446L35.8962 28.5196C35.6112 30.8763 34.7962 33.28 33.4512 35.7309L36.4325 37.9809L36.455 37.9971L38 31.0446Z" fill="#E5E5E5"/>
-                          </g>
-                          <defs>
-                          <filter id="filter0_ii_1874_1607" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                          <feOffset dy="-1"/>
-                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.24 0"/>
-                          <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1874_1607"/>
-                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                          <feOffset dy="1"/>
-                          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                          <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.24 0"/>
-                          <feBlend mode="normal" in2="effect1_innerShadow_1874_1607" result="effect2_innerShadow_1874_1607"/>
-                          </filter>
-                          </defs>
+                        <g filter="url(#filter0_ii_1874_1645)">
+                        <rect width="56" height="56" rx="28" fill="white" fill-opacity="0.04"/>
+                        <path d="M38.7312 27.6816L24.7312 42.6816C24.5829 42.84 24.387 42.9457 24.1733 42.983C23.9595 43.0203 23.7395 42.987 23.5463 42.8882C23.3531 42.7894 23.1973 42.6305 23.1023 42.4354C23.0074 42.2403 22.9785 42.0196 23.02 41.8066L24.8525 32.6404L17.6487 29.9354C17.494 29.8775 17.3561 29.7822 17.2472 29.658C17.1383 29.5338 17.0618 29.3846 17.0247 29.2236C16.9876 29.0627 16.9909 28.895 17.0343 28.7357C17.0778 28.5763 17.16 28.4302 17.2737 28.3104L31.2737 13.3104C31.4221 13.1521 31.6179 13.0463 31.8317 13.009C32.0454 12.9717 32.2655 13.005 32.4587 13.1038C32.6519 13.2026 32.8077 13.3615 32.9026 13.5566C32.9976 13.7517 33.0265 13.9724 32.985 14.1854L31.1475 23.3616L38.3512 26.0629C38.5048 26.1211 38.6417 26.2163 38.7497 26.34C38.8578 26.4637 38.9337 26.6122 38.9707 26.7722C39.0078 26.9322 39.0049 27.0989 38.9622 27.2575C38.9196 27.4161 38.8385 27.5618 38.7262 27.6816H38.7312Z" fill="#E5E5E5"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_ii_1874_1645" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="-1"/>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.24 0"/>
+                        <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1874_1645"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="1"/>
+                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.24 0"/>
+                        <feBlend mode="normal" in2="effect1_innerShadow_1874_1645" result="effect2_innerShadow_1874_1645"/>
+                        </filter>
+                        </defs>
                         </svg>
+
                         <h3 className='freeplanpro gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[20px] pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px] pb-[5px] sm:pb-[6px] md:pb-[7px] lg:pb-[8px] xl:pb-[8px] 2xl:pb-[8px]'>Pro Plan</h3>
                         <p className='throeconsper text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
                           Unlock capabilities to scale and <br className='sm:block hidden'/> streamline operations.
@@ -295,7 +296,7 @@ const cardsRef = useRef([]);
                           pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[16px] 2xl:pb-[16px]
                           px-[20px] sm:px-[24px] md:px-[28px] lg:px-[32px] xl:px-[32px] 2xl:px-[32px]
                           my-[20px] sm:my-[24px] md:my-[28px] lg:my-[32px] xl:my-[32px] 2xl:my-[32px]
-                          transition-all duration-300 group-hover:opacity-80 group-hover:scale-[1.02] group-active:scale-[0.98]'>
+                          transition-all duration-300 group-hover:opacity-80 group-active:scale-[0.98]'>
                           <span className='ctabuttontext text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
                             Upgrade to Pro
                           </span>
