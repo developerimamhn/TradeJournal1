@@ -11,9 +11,9 @@ const HeroPage = () => {
     return (
         <div id="hero" className='relative  h-full'> 
           <div className='relative z-[2] overflow-hidden container mx-auto '>
-            <div className='pt-[80px] sm:pt-[120px] md:pt-[90px] lg:pt-[120px] xl:pt-[150px] 2xl:pt-[15%] sm:pb-0 pb-[0px] container mx-auto px-[24px] sm:px-0 w-full grid sm:grid-cols-2 grid-cols-1 items-center justify-start sm:justify-between'>
+            <div className='pt-[80px] sm:pt-[120px] md:pt-[90px] lg:pt-[120px] xl:pt-[150px] 2xl:pt-[15%] sm:pb-0 pb-[0px] container mx-auto px-[24px] sm:px-0 w-full grid sm:grid-cols-2 grid-cols-1 items-center justify-between'>
               <div>
-                  <div className="flex items-start justify-start">
+                  <div className="flex items-start justify-center sm:justify-start">
                     
                     <button className="delay-1 hero-anim transingpore relative overflow-hidden px-[12px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px]
                         py-[5px] lg:py-[6px] xl:py-[7px] 2xl:py-[9.5px]
@@ -35,15 +35,15 @@ const HeroPage = () => {
                       />
                     </button>
                   </div>
-                  <h2 className='tradines hero-anim delay-2 text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[64px] !text-start mt-[8px] lg:mt-[12px]'>
+                  <h2 className='tradines hero-anim delay-2 text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[64px] text-center sm:!text-start mt-[8px] lg:mt-[12px]'>
                      <span >Track Every Trade. </span><br/> <span >Improve Every Week.</span>  
                     </h2>
                     </div>
                   
                 <div  className='flex items-end justify-center flex-col'>
-                  <div className='flex items-start flex-col justify-center'>
+                  <div className='flex items-center sm:items-start flex-col justify-center'>
                     
-                    <p className='bitstartp hero-anim delay-3 text-[11px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px] !text-start md:pt-0 pt-2'>A powerful trading journal and analytics platform built <br className='lg:block hidden'/>to help traders identify patterns, reduce mistakes, and <br className='lg:block hidden'/> improve consistency.</p>
+                    <p className='bitstartp hero-anim delay-3 text-[11px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px] text-center sm:!text-start md:pt-0 pt-2'>A powerful trading journal and analytics platform built <br className='lg:block hidden'/>to help traders identify patterns, reduce mistakes, and <br className='lg:block hidden'/> improve consistency.</p>
                     <button className='buttonauditelt hero-anim delay-4 bg-[#608BFE] hover:bg-transparent group relative  cursor-pointer px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[32px]
                         py-[11px] sm:py-[12px] md:py-[13px] lg:py-[14px] xl:py-[15px] 2xl:py-[16px]
                         text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] group gap-[7.50px]'>

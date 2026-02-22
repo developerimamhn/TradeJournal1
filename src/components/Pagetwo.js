@@ -219,14 +219,14 @@ const Pagetwo = () => {
             </div>
 
             <div className='flex items-center justify-center flex-col pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px]'>
-              <div className='flex items-start flex-col justify-start pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[64px]'>
-                <h2 ref={titleRef} className='tradines text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[62px] items-center'>
-                  <span>See your trading performance clearly.</span>  
+              <div className='flex items-center justify-center pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[64px] w-full'>
+                <h2 ref={titleRef} className='tradines text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[62px] text-center'>
+                  See your trading <br className='block sm:hidden'/> performance clearly.
                 </h2>
               </div>
               
               {/* Tab Slider */}
-              <span ref={containerRef} className='DashboardOverview relative flex justify-between sm:inline-flex p-1 w-full'>
+              <span ref={containerRef} className='DashboardOverview relative inline-flex p-1 '>
                 <div
                   className='absolute top-1/2 -translate-y-1/2 bg-[#608BFE] rounded-[50px] -z-10 transition-all duration-300 ease-in-out'
                   style={sliderStyle}
@@ -240,7 +240,7 @@ const Pagetwo = () => {
                     className={`transingpore relative overflow-hidden 
                       px-[8px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px]
                       py-[5px] lg:py-[6px] xl:py-[7px] 2xl:py-[9.5px] cursor-pointer
-                      text-[5.6px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px]
+                      text-[7px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px]
                       transition-colors duration-300
                       ${activeIndex === index ? 'text-white' : 'text-gray-400'}`}>
                     {label} 
