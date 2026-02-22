@@ -63,7 +63,7 @@ const HeroPage = () => {
                   </div>
                 </div>
             </div>
-           <div className="rounded-[60px] shadow-[0px_22px_48px_#608BFE]">
+           <div className="rounded-[60px] md:shadow-[0px_22px_48px_#608BFE]">
             <LazyLoadImage className='w-full sm:px-0 px-6 mt-[40px] sm:mt-[48px] md:mt-[58px] lg:mt-[74px] xl:mt-[110px] 2xl:mt-[132px] hero-anim delay-5 ' src={righticon} alt='loading..'/>
              </div>
           </div>
