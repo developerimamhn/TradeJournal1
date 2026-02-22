@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef,  } from 'react';
 import backgroundimageawsta from "../assets/Frame 1321319039.png";
 import logo from "../assets/TradeJournal.png";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -61,11 +62,11 @@ const Footer = () => {
   }, []);
     return (
         <div id='Support' className='footersvg relative pt-[32px] sm:pt-[36px] md:pt-[40px] lg:pt-[48px] xl:pt-[64px] 2xl:pt-[84px] '>
-          <img className='h-fit absolute bottom-0 left-0 animate-pulse -z-10' src={backgroundimageawsta} alt='backgroundLoading...'/>
+          <LazyLoadImage className='h-fit absolute bottom-0 left-0 animate-pulse -z-10' src={backgroundimageawsta} alt='backgroundLoading...'/>
             <div className='w-full flex flex-col justify-between gap-[44px] px-6 sm:px-0 sm:gap-0 sm:grid grid-cols-2 container mx-auto'>
               <div className='flex items-start justify-start flex-col'>
                 <a href='/' className='cursor-pointer flex items-center justify-start Froggo-Logo'>
-                <img className='w-auto h-[21px] sm:h-[24px] 2xl:h-[28px]' src={logo} alt=''/></a>
+                <LazyLoadImage className='w-auto h-[21px] sm:h-[24px] 2xl:h-[28px]' src={logo} alt=''/></a>
                 <p className='bitstartp text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] pt-[7px] lg:pt-[10px]'>The modern trading journal built for performance.</p>
               </div>
               <div className=' flex items-start justify-start sm:justify-end gap-[24px] sm:gap-[32px] md:gap-[36px] lg:gap-[40px] xl:gap-[48px] 2xl:gap-[64px]'>

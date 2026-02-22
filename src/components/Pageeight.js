@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef, useState } from 'react';
 import image9 from '../assets/image9.png';
 import imagefromleft from '../assets/imagefromleft.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,7 +46,7 @@ const Pageeight = () => {
     return (
         <div className='py-[40px] sm:py-[50px] md:py-[60px] lg:py-[90px] xl:py-[120px] 2xl:py-[150px]'>
           <div className='container mx-auto relative lg:py-[120px] xl:py-[150px] 2xl:py-[180px]'>
-          <img className='h-full absolute left-10 top-0 z-[10] sm:block hidden' src={imagefromleft} alt='loading...'/>
+          <LazyLoadImage className='h-full absolute left-10 top-0 z-[10] lg:block hidden' src={imagefromleft} alt='loading...'/>
 
 
             <div className='grid grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-14 px-6 sm:px-0 items-center justify-center'>

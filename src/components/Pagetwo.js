@@ -5,6 +5,7 @@ import numbeingss from '../assets/Frame 1321318957.png';
 import numbeings1 from '../assets/Group 2087329730.png';
 import numbeings2 from '../assets/Group 2087329731.png';
 import backgroudimage from '../assets/image5.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -194,7 +195,7 @@ const Pagetwo = () => {
 
   return (
     <div id='Analytics' ref={wrapperRef} className='pt-[36px] sm:pt-[40px] md:pt-[48px] lg:pt-[64px] xl:pt-[96px] 2xl:pt-[120px] px-6 sm:px-0 relative'>
-      <img className='w-full absolute top-0 -z-10' src={backgroudimage} alt='Loading...'/>
+      <LazyLoadImage className='w-full absolute top-0 -z-10' src={backgroudimage} alt='Loading...'/>
       
       <div className='container mx-auto relative z-10'>
         <div className='grid grid-cols-1 justify-center items-center gap-[32px] sm:gap-[36px] md:gap-[40px] lg:gap-[48px] xl:gap-[64px] 2xl:gap-[78px]'>
@@ -225,7 +226,7 @@ const Pagetwo = () => {
               </div>
               
               {/* Tab Slider */}
-              <span ref={containerRef} className='DashboardOverview relative inline-flex p-1'>
+              <span ref={containerRef} className='DashboardOverview relative flex justify-between sm:inline-flex p-1 w-full'>
                 <div
                   className='absolute top-1/2 -translate-y-1/2 bg-[#608BFE] rounded-[50px] -z-10 transition-all duration-300 ease-in-out'
                   style={sliderStyle}
@@ -237,9 +238,9 @@ const Pagetwo = () => {
                     ref={(el) => (buttonRefs.current[index] = el)} 
                     onClick={() => handleTabChange(index)} 
                     className={`transingpore relative overflow-hidden 
-                      px-[12px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px]
+                      px-[8px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px]
                       py-[5px] lg:py-[6px] xl:py-[7px] 2xl:py-[9.5px] cursor-pointer
-                      text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px]
+                      text-[5.6px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px]
                       transition-colors duration-300
                       ${activeIndex === index ? 'text-white' : 'text-gray-400'}`}>
                     {label} 
@@ -251,7 +252,7 @@ const Pagetwo = () => {
 
           {/* Dynamic Image Container */}
           <div ref={gridItem1Ref} className="relative">
-            <img 
+            <LazyLoadImage 
               ref={imageRef}
               className='w-full relative' 
               src={images[activeIndex]} 

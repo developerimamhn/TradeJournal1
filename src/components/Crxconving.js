@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import numbeingss1 from '../assets/numbeingss1.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Crxconving = () => {
     const [activeLink, setActiveLink] = useState('/buy'); 
@@ -76,7 +77,7 @@ const Crxconving = () => {
                                     className="flex items-center gap-2 p-1 hover:bg-gray-100 cursor-pointer"
                                     onClick={() => handleSelect(option)}
                                 >
-                                    <Image
+                                    <LazyLoadImage
                                         src={option.image}
                                         alt={`${option.name} Icon`}
                                         className="w-[13px] sm:w-[14px] md:w-[15px] lg:w-[16px] xl:w-[20px] 2xl:w-[25px]"

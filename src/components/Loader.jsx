@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 import logo from "../assets/logo.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Loader = ({ onComplete }) => {
   const loaderRef = useRef(null);
@@ -39,7 +40,7 @@ const Loader = ({ onComplete }) => {
       className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#07011B]"
     >
       <div ref={logoRef}>
-        <img src={logo} alt="Loading" className="h-[48px] w-auto" />
+        <LazyLoadImage src={logo} alt="Loading" className="h-[48px] w-auto" />
       </div>
     </div>
   );

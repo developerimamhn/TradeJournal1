@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { LiaBarsSolid } from "react-icons/lia";
 import { VscChromeClose } from "react-icons/vsc";
 import logo from '../assets/logo.png';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 const NavBar = () => {
@@ -134,7 +135,7 @@ const NavBar = () => {
             <div className='sm:px-[36px] md:px-[40px] lg:px-[48px] xl:px-[64px] 2xl:px-[100px]  flex justify-between items-center relative  sm:overflow-hidden '>
             {/* <dev className='linersext absolute bottom-0 left-0 w-full h-[2px] z-10'></dev> */}
             <button onClick={(e) => handleScrollToTop(e, "")} className='cursor-pointer flex items-center justify-start Froggo-Logo sm:py-0 py-2'>
-                <img className='w-full h-[14px] sm:h-[15px] md:h-[16px]  2xl:h-[17px]' src={logo} alt=''/></button>
+                <LazyLoadImage className='w-full h-[14px] sm:h-[12px] md:h-[12px] lg:h-[16px] 2xl:h-[17px]' src={logo} alt=''/></button>
                 <div className='sm:hidden relative top-[-11px] -left-6'>   
                     <div 
                         className={`transition-transform duration-300 ease-in-out ${toggle ? 'opacity-100' : 'opacity-0 -translate-x-2'}`}
@@ -176,8 +177,8 @@ const NavBar = () => {
                     </a>
 
                     <ul className='sm:hidden flex items-center justify-center gap-4 py-[7px] sm:py-0'>
-                    <button className='loginarohteaws text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] x-[11px] sm:px-[12px] md:px-[13px] lg:px-[14px] xl:px-[15px] 2xl:px-[16px] py-[5px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] cursor-pointer'>Login</button>
-                        <button className='buttonauditelt relative  cursor-pointer px-[11px] sm:px-[12px] md:px-[13px] lg:px-[14px] xl:px-[15px] 2xl:px-[16px]
+                    <button className='loginarohteaws text-[10px] sm:text-[11px] md:text-[11px] lg:text-[13px] xl:text-[14px] x-[11px] sm:px-[12px] md:px-[13px] lg:px-[14px] xl:px-[15px] 2xl:px-[16px] py-[5px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] cursor-pointer'>Login</button>
+                        <button className='buttonauditelt relative  cursor-pointer px-[11px] sm:px-[10px] md:px-[13px] lg:px-[14px] xl:px-[15px] 2xl:px-[16px]
                         py-[5px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px]
                         text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] group gap-[7.50px]'>
                             Get Started Free
@@ -197,10 +198,10 @@ const NavBar = () => {
                 </nav>
                 
                 <ul className='sm:flex items-center justify-center  hidden gap-4 sm:py-0'>
-                    <button className='loginarohteaws text-[10px] sm:text-[10px] md:text-[12px] lg:text-[13px] xl:text-[14px] x-[11px] sm:px-[12px] md:px-[13px] lg:px-[14px] xl:px-[15px] 2xl:px-[16px] py-[5px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] cursor-pointer'>Login</button>
+                    <button className='loginarohteaws text-[10px] sm:text-[10px] md:text-[11px] lg:text-[13px] xl:text-[14px] x-[11px] sm:px-[10px] md:px-[13px] lg:px-[14px] xl:px-[15px] 2xl:px-[16px] py-[5px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px] cursor-pointer'>Login</button>
                         <button className='buttonauditelt relative  cursor-pointer px-[11px] sm:px-[10px] md:px-[13px] lg:px-[14px] xl:px-[15px] 2xl:px-[16px]
                         py-[5px] lg:py-[6px] xl:py-[7px] 2xl:py-[8px]
-                        text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] group gap-[7.50px]'>
+                        text-[10px] sm:text-[10px] md:text-[12px] lg:text-[13px] xl:text-[14px] group gap-[7.50px]'>
                             Get Started Free
                             <div
                         className="

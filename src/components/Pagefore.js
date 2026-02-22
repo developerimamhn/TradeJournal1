@@ -129,7 +129,7 @@ const textRef = useRef(null);
                     </button>
                   </div>
                   <h2 className='tradines text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[62px] text-center pt-[8px] sm:pt-[9px] md:pt-[10px] lg:pt-[11px] xl:pt-[12px] 2xl:pt-[12px]'>
-                 Start tracking in minutes. <br className='sm:block hidden'/> Improve for life. 
+                 Start tracking in minutes. <br className='lg:block hidden'/> Improve for life. 
                   </h2>
 
 
@@ -222,7 +222,7 @@ const textRef = useRef(null);
                         Import or Add Trades
                       </h4>
                       <p className='strategytext text-[10px] sm:text-[11px] md:text-[11px] lg:text-[12px] xl:text-[13px] 2xl:text-[14px] pt-[4px] sm:pt-[4px] md:pt-[5px] lg:pt-[5px] xl:pt-[6px] 2xl:pt-[6px]'>
-                        Upload trades manually or import from <br className='sm:block hidden'/> your broker platform.
+                        Upload trades manually or import from <br className='lg:block hidden'/> your broker platform.
                       </p>
                     </div>
                   </div>
@@ -314,7 +314,7 @@ const textRef = useRef(null);
                       Tag & Journal
                     </h4>
                     <p className='strategytext text-[10px] sm:text-[11px] md:text-[11px] lg:text-[12px] xl:text-[13px] 2xl:text-[14px] pt-[4px] sm:pt-[4px] md:pt-[5px] lg:pt-[5px] xl:pt-[6px] 2xl:pt-[6px]'>
-                      Add strategy tags, emotions, session notes, and<br className='sm:block hidden'/> screenshots for each trade.
+                      Add strategy tags, emotions, session notes, and<br className='lg:block hidden'/> screenshots for each trade.
                     </p>
                     </div>
                   </div>

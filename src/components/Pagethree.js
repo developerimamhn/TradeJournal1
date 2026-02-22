@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef } from 'react';
 import linerone from '../assets/420755831_1a6fd383-1cd8-49ssssc3-a098-7d9696b5be08 1.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -141,7 +142,7 @@ const cardsRef = useRef([]);
           </defs>
           </svg>
 
-          <img className='w-full absolute top-1/2 -translate-y-1/2 -z-11 object-cover object-center select-none' src={linerone} alt='lineroneLoading...'/>
+          <LazyLoadImage className='w-full absolute top-1/2 -translate-y-1/2 -z-11 object-cover object-center select-none' src={linerone} alt='lineroneLoading...'/>
             <div ref={wrapperRef} className='relative z-20 container overflow-hidden mx-auto py-[70px] sm:py-[80px] md:py-[90px] lg:py-[100px] xl:py-[110px] 2xl:py-[120px] px-[24px] md:px-[100px] lg:px-[120px] xl:px-[150px] 2xl:px-[232px]'>
                 <div className="">
                   <div ref={headerRef} className='flex flex-col items-start justify-start'>
@@ -164,7 +165,7 @@ const cardsRef = useRef([]);
                     </button>
                   </div>
                   <h2 className='tradines text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[62px] text-start! pt-[8px] sm:pt-[9px] md:pt-[10px] lg:pt-[11px] xl:pt-[12px] 2xl:pt-[12px]'>
-                  Designed for every step <br className='sm:block hidden'/> of your journey 
+                  Designed for every step <br className='lg:block hidden'/> of your journey 
                   </h2>
 
                   </div>
@@ -206,7 +207,7 @@ const cardsRef = useRef([]);
                         </h3>
 
                         <p className='throeconsper text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                          Get access to all the essential tools to <br className='sm:block hidden'/>
+                          Get access to all the essential tools to <br className='lg:block hidden'/>
                           kickstart your journey.
                         </p>
 
@@ -283,7 +284,7 @@ const cardsRef = useRef([]);
 
                         <h3 className='freeplanpro gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[20px] pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px] pb-[5px] sm:pb-[6px] md:pb-[7px] lg:pb-[8px] xl:pb-[8px] 2xl:pb-[8px]'>Pro Plan</h3>
                         <p className='throeconsper text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                          Unlock capabilities to scale and <br className='sm:block hidden'/> streamline operations.
+                          Unlock capabilities to scale and <br className='lg:block hidden'/> streamline operations.
                         </p>
                         <p className='typhographi text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] text-start pt-[11px] sm:pt-[12px] md:pt-[13px] lg:pt-[14px] xl:pt-[15px] 2xl:pt-[16px]'>
                           <span className='dollarmonth'>$</span>

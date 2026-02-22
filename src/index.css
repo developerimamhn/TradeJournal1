@@ -1401,7 +1401,7 @@ body {
     line-height: 24px; /* 150% */
   }
   .Link-manu-bar { 
-    @apply text-[11px] sm:text-[10px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] duration-300 duration-200 hover:text-[#ffffff9a] px-[11px] sm:px-[8px] md:px-[13px] lg:px-[14px] xl:px-[15px] 2xl:px-[16px];
+    @apply text-[11px] sm:text-[10px] md:text-[10px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] duration-300 duration-200 hover:text-[#ffffff9a] px-[11px] sm:px-[5px] md:px-[8px] lg:px-[14px] xl:px-[15px] 2xl:px-[16px];
   }
   .backgroundheader {  
     background: linear-gradient(180deg, #141024 0%, #070510 50%);
